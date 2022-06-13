@@ -27,6 +27,13 @@ git push origin --tags
 ```
 
 ## Prerequisites
+
 * JDK 8+
 * Apache Maven 3.5+
 
+## Deployment
+
+```bash
+docker build -t iti-g106 .
+docker run -d -p 8000:8000 iti-g106
+```
